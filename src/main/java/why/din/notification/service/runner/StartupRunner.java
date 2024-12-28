@@ -22,7 +22,7 @@ public class StartupRunner {
     @Bean
     public CommandLineRunner runAfterStart() {
         return args -> {
-            String url = svcCfg.getRunnerUrl();  // Adjust the URL if necessary
+            String url = svcCfg.getRunnerUrl();
             Request request = new Request.Builder()
                     .url(url)
                     .build();
